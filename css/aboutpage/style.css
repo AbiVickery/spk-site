@@ -1,0 +1,27 @@
+body {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  background: rgb(130, 102, 146);
+}
+
+.box {
+  max-width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(800px /10 );
+  height: 90px;
+  background: url(Harmony-fly.png);
+  animation: animate 1.2s steps(10) infinite;
+  margin: -200px 95px -375px 22px;
+}
+@keyframes animate {
+  from {
+      background-position: 0;
+  }
+  to {
+      background-position: 800px;
+  }
+}
